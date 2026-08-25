@@ -133,8 +133,47 @@ body {
     background-color: var(--cor-terciaria);
 }
 
+.projetos { padding: 6% 10%; display: flex; flex-direction: column; gap: 16px; }
+.projetos__titulo { font-size: 2.25rem; font-family: var(--fonte-primaria); }
+.projetos__introducao { font-size: 1.25rem; font-family: var(--fonte-secundaria); color: var(--cor-secundaria); max-width: 700px; margin-bottom: 24px; }
+.projetos__lista { display: flex; flex-direction: column; gap: 40px; }
+.projeto-card { border: 2px solid var(--cor-terciaria); border-radius: 8px; padding: 32px; display: flex; flex-direction: column; gap: 20px; transition: background-color 0.2s ease; }
+.projeto-card:hover { background-color: var(--cor-hover-link); }
+.projeto-card__cabecalho { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; justify-content: space-between; }
+.projeto-card__titulo { font-size: 1.5rem; font-family: var(--fonte-primaria); color: var(--cor-secundaria); }
+.projeto-card__badge { font-family: var(--fonte-secundaria); font-size: 0.9rem; font-weight: 600; padding: 6px 16px; border-radius: 20px; white-space: nowrap; }
+.projeto-card__badge--concluido { background-color: var(--cor-terciaria); color: var(--cor-primaria); }
+.projeto-card__badge--dev { background-color: transparent; color: var(--cor-terciaria); border: 1px solid var(--cor-terciaria); }
+.projeto-card__descricao { font-family: var(--fonte-secundaria); font-size: 1.1rem; line-height: 1.6; color: var(--cor-secundaria); }
+.projeto-card__tags { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; }
+.projeto-card__tag { font-family: var(--fonte-secundaria); font-size: 0.85rem; background-color: var(--cor-primaria); border: 1px solid var(--cor-secundaria); border-radius: 4px; padding: 4px 12px; opacity: 0.85; }
+.projeto-card__links { display: flex; flex-wrap: wrap; gap: 16px; }
+.projeto-card__link { display: flex; align-items: center; gap: 10px; font-family: var(--fonte-secundaria); font-size: 1rem; font-weight: 600; color: var(--cor-secundaria); text-decoration: none; border: 2px solid var(--cor-terciaria); border-radius: 8px; padding: 10px 20px; }
+.projeto-card__link:hover { background-color: var(--cor-hover-link); }
+.projeto-card__link--destaque { background-color: var(--cor-terciaria); color: var(--cor-primaria); }
+.projeto-card__link--destaque:hover { background-color: var(--cor-hover-menu); }
+
+.curriculo { padding: 6% 10%; display: flex; flex-direction: column; gap: 48px; }
+.curriculo__titulo { font-size: 2.25rem; font-family: var(--fonte-primaria); }
+.curriculo__secao { display: flex; flex-direction: column; gap: 20px; }
+.curriculo__secao__titulo { font-size: 1.5rem; font-family: var(--fonte-primaria); color: var(--cor-terciaria); border-bottom: 2px solid var(--cor-terciaria); padding-bottom: 12px; }
+.curriculo__item { display: flex; flex-direction: column; gap: 4px; }
+.curriculo__item__principal { font-family: var(--fonte-secundaria); font-weight: 700; font-size: 1.2rem; color: var(--cor-secundaria); }
+.curriculo__item__secundario { font-family: var(--fonte-secundaria); font-size: 1rem; color: var(--cor-secundaria); opacity: 0.85; }
+.curriculo__tags { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; }
+.curriculo__tag { font-family: var(--fonte-secundaria); font-size: 0.95rem; border: 2px solid var(--cor-terciaria); border-radius: 8px; padding: 8px 18px; color: var(--cor-secundaria); }
+.curriculo__link-projetos { margin-top: 4px; }
+.curriculo__link { font-family: var(--fonte-secundaria); font-weight: 600; color: var(--cor-terciaria); text-decoration: none; }
+.curriculo__link:hover { color: var(--cor-hover-menu); }
+.curriculo__links-contato { display: flex; flex-wrap: wrap; gap: 24px; }
+.curriculo__links-contato .apresentacao__links__navegacao { width: auto; padding: 14px 24px; }
+
 @media (max-width: 1200px) {
     .cabecalho {
+        padding: 8%;
+    }
+
+    .curriculo {
         padding: 8%;
     }
 
