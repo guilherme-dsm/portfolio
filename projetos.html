@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
+            <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
+        </nav>
+    </header>
+    <main class="projetos">
+        <h1 class="projetos__titulo">Meus <strong class="titulo-destaque">projetos</strong></h1>
+        <p class="projetos__introducao">Projetos que venho construindo para aprender desenvolvimento full-stack na prática — do zero até deploy em produção.</p>
+
+        <section class="projetos__lista">
+
+            <article class="projeto-card">
+                <div class="projeto-card__cabecalho">
+                    <h2 class="projeto-card__titulo">Mini Rede ABM</h2>
+                    <span class="projeto-card__badge projeto-card__badge--concluido">Em produção</span>
+                </div>
+                <p class="projeto-card__descricao">
+                    Mini rede social voltada para moradores de um condomínio, desenvolvida do zero como
+                    aprendizado prático de full-stack: API REST, autenticação com hash de senha, upload de
+                    arquivos e recuperação de senha por e-mail. Combina páginas server-rendered (Flask + Jinja2)
+                    com um mural client-rendered (JavaScript vanilla + Fetch API), sem frameworks de frontend
+                    e sem ORM — priorizando entender cada camada antes de abstrair.
+                </p>
+                <ul class="projeto-card__tags">
+                    <li class="projeto-card__tag">Python</li>
+                    <li class="projeto-card__tag">Flask</li>
+                    <li class="projeto-card__tag">PostgreSQL</li>
+                    <li class="projeto-card__tag">Jinja2</li>
+                    <li class="projeto-card__tag">JavaScript</li>
+                    <li class="projeto-card__tag">SQL puro</li>
+                </ul>
+                <div class="projeto-card__links">
+                    <a class="projeto-card__link" href="https://github.com/guilherme-dsm/mini-rede-abm" target="_blank" rel="noopener noreferrer">
+                        <img class="icone" src="./assets/github.png" alt="">
+                        Repositório
+                    </a>
+                    <a class="projeto-card__link projeto-card__link--destaque" href="https://blog-abm.onrender.com/" target="_blank" rel="noopener noreferrer">
+                        Ver deploy
+                    </a>
+                </div>
+            </article>
+
+            <article class="projeto-card">
+                <div class="projeto-card__cabecalho">
+                    <h2 class="projeto-card__titulo">MailTriage</h2>
+                    <span class="projeto-card__badge projeto-card__badge--dev">Em desenvolvimento</span>
+                </div>
+                <p class="projeto-card__descricao">
+                    Sistema de triagem inteligente de e-mail: o usuário define regras exatas ou semânticas sobre
+                    o que é relevante, o n8n monitora a caixa do Gmail em tempo real e aplica as regras — com
+                    apoio de um LLM quando é preciso entender o conteúdo do e-mail — organizando tudo num painel
+                    próprio por categoria. Backend REST em Node/TypeScript, banco relacional no Neon e frontend
+                    em React ainda por vir.
+                </p>
+                <ul class="projeto-card__tags">
+                    <li class="projeto-card__tag">Node.js</li>
+                    <li class="projeto-card__tag">TypeScript</li>
+                    <li class="projeto-card__tag">Express</li>
+                    <li class="projeto-card__tag">PostgreSQL</li>
+                    <li class="projeto-card__tag">n8n</li>
+                    <li class="projeto-card__tag">React</li>
+                </ul>
+                <div class="projeto-card__links">
+                    <a class="projeto-card__link" href="https://github.com/guilherme-dsm/mailtriage" target="_blank" rel="noopener noreferrer">
+                        <img class="icone" src="./assets/github.png" alt="">
+                        Repositório
+                    </a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Guilherme Mesquita.</p>
+    </footer>
+</body>
+</html>
